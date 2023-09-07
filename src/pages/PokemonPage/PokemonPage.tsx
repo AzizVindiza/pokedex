@@ -1,8 +1,6 @@
 import './PokemonPage.sass';
 import {useGetPokemonByNameQuery} from "../../store/pokemonApi";
 import {useLocation} from "react-router-dom";
-import {IAllPokemon} from "../../store/types/IAllPokemon";
-import PokemonCardLazy from "../../components/PokemonCard/PokemonCard.lazy";
 import React from "react";
 
 const PokemonPage = () => {

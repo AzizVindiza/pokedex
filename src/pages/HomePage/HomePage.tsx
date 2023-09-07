@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./HomePage.sass"
-import {useGetAllPokemonsQuery, useGetPokemonByNameQuery} from "../../store/pokemonApi";
+import {useGetAllPokemonsQuery} from "../../store/pokemonApi";
 import {IAllPokemon} from "../../store/types/IAllPokemon";
 import PokemonCardLazy from "../../components/PokemonCard/PokemonCard.lazy";
 
