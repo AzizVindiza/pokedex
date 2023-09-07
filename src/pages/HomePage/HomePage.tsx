@@ -11,7 +11,6 @@ const HomePage = () => {
             return prevState + 10
         })
     }
-    // const { data : search, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
     const {data: pokemons, error, isLoading} = useGetAllPokemonsQuery(limit)
     return (
         <main className={"home"}>

@@ -15,7 +15,7 @@ export const pokemonApi = createApi({
             }),
         }),
         getPokemonByName: builder.query<any, string>({
-            query: (name) => `pokemon/${name}`,
+            query: (name) => `pokemon${name}`,
         }),
     }),
 })
