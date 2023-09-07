@@ -1,12 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {Api} from "./api";
+import {pokemonApi} from "./pokemonApi";
 
 export const  store = configureStore({
     reducer : {
-        [Api.reducerPath] : Api.reducer
+        [pokemonApi.reducerPath] : pokemonApi.reducer
     },
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(Api.middleware),
+        getDefaultMiddleware().concat(pokemonApi.middleware),
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
