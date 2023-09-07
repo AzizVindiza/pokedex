@@ -22,9 +22,9 @@
       },
       "path": "src/pages",
       "withStyle": false,
-      "withTest": true,
+      "withTest": false,
       "withStory": false,
-      "withLazy": true
+      "withLazy": false
     },
     "section": {
       "customTemplates": {
@@ -33,9 +33,9 @@
       },
       "path": "src/pages/sections",
       "withStyle": true,
-      "withTest": true,
+      "withTest": false,
       "withStory": false,
-      "withLazy": true
+      "withLazy": false
     }
   }
 }

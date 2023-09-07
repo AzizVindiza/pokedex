@@ -1,6 +1,6 @@
 
 export const TemplateName = () => (
-    <main className={"templateName"} data-testid="TemplateName">
+    <main className={"templateName"}>
         TemplateName
     </main>
 );

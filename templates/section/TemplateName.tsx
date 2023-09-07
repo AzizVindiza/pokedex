@@ -1,10 +1,7 @@
 import './TemplateName.sass';
 
-export interface TemplateNameProps {
-}
-
-const TemplateName = ({}: TemplateNameProps) => (
-    <section className={"templateName"} data-testid="TemplateName">
+const TemplateName = () => (
+    <section className={"templateName"}>
         <div className="container">
             TemplateName Section
         </div>
