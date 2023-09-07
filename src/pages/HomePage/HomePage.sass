@@ -1,5 +1,4 @@
 @import "src/styles/mixins"
-
 .home
   &__container
     display: flex
@@ -9,6 +8,23 @@
     column-gap: 20px
     flex-wrap: wrap
 
+  .btn-more
+    appearance: none
+    background-color: transparent
+    border: 2px solid #1abc9c
+    border-radius: 20px
+    color: #ffffff
+    cursor: pointer
+    margin: 20px
+    padding: 20px 60px
+    text-decoration: none
+    text-align: center
+    text-transform: uppercase
+    &:hover,
+    &:focus
+      border: 2px solid #fff
+      background: #1abc9c
+      outline: 0
 
 
 @media (min-width: 640px)

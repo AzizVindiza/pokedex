@@ -7,7 +7,7 @@ export interface PokemonCardProps {
 }
 
 const PokemonCard = ({el,idx} : PokemonCardProps) => (
-    <Link className={"pokemonCard"} to={`/pokemon/${el.name}`}>
+    <Link className={"pokemonCard"} to={`/${el.name}`}>
         <div className="pokemonCard__container">
             <h2 className={"pokemonCard__name"}>{el.name} <span className={"pokemonCard__number"}>#{idx+1}</span></h2>
             <div className={"pokemonCard__img"}>

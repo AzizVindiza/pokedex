@@ -2,16 +2,17 @@ import React, {useState} from 'react';
 import "./HomePage.sass"
 import {useGetAllPokemonsQuery, useGetPokemonByNameQuery} from "../../store/pokemonApi";
 import {IAllPokemon} from "../../store/types/IAllPokemon";
-import PokemonCard from "../../components/PokemonCard/PokemonCard";
+import PokemonCardLazy from "../../components/PokemonCard/PokemonCard.lazy";
+
 const HomePage = () => {
     const [limit, setLimit] = useState(40)
-    const handleButtonLimit = () =>{
+    const handleButtonLimit = () => {
         setLimit(prevState => {
             return prevState + 10
         })
     }
     // const { data : search, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
-    const { data : pokemons, error, isLoading } = useGetAllPokemonsQuery(limit)
+    const {data: pokemons, error, isLoading} = useGetAllPokemonsQuery(limit)
     return (
         <main className={"home"}>
             <div className="container home__container">
@@ -19,11 +20,13 @@ const HomePage = () => {
                     <>Oh no, there was an error</>
                 ) : isLoading ? (
                     <>Loading...</>
-                ) : pokemons && pokemons.results.map((el : IAllPokemon, idx : number)=>{
-                    return <PokemonCard el={el} idx={idx} key={idx}/>
+                ) : pokemons && pokemons.results.map((el: IAllPokemon, idx: number) => {
+                    return <PokemonCardLazy el={el} idx={idx} key={idx}/>
                 })}
             </div>
-            <button onClick={()=> handleButtonLimit()} className={"btn-more"}> More ...</button>
+           <div className="container home__container">
+               <button onClick={() => handleButtonLimit()} className={"btn-more"}> More ...</button>
+           </div>
         </main>
     );
 };
