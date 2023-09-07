@@ -1,11 +1,11 @@
 import './Footer.sass';
 
 const Footer = () => (
-    <section className={"footer"}>
+    <footer className={"footer"}>
         <div className="container">
             Footer Section
         </div>
-    </section>
+    </footer>
 );
 
 export default Footer;
