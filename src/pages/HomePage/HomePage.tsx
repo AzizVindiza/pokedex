@@ -5,7 +5,7 @@ import {IAllPokemon} from "../../store/types/IAllPokemon";
 import PokemonCardLazy from "../../components/PokemonCard/PokemonCard.lazy";
 
 const HomePage = () => {
-    const [limit, setLimit] = useState(40)
+    const [limit, setLimit] = useState(20)
     const handleButtonLimit = () => {
         setLimit(prevState => {
             return prevState + 10

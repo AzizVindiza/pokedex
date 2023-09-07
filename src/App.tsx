@@ -7,6 +7,7 @@ import {
 import Layout from "./Layout/Layout";
 import HomePage from "./pages/HomePage/HomePage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import PokemonPage from "./pages/PokemonPage/PokemonPage";
 
 
 const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<Layout/>}>
             <Route index element={<HomePage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
+            <Route path=":name" element={<PokemonPage/>}/>
         </Route>
     )
 );
