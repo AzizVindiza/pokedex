@@ -7,14 +7,15 @@
     align-items: center
     flex-direction: column
   &__h2
-    @include text(500,48px,45px,#fff)
+    @include text(500,28px,35px,#fff)
     margin-bottom: 20px
   &__h3
-    @include text(500,38px,35px,#fff)
+    @include text(500,18px,25px,#fff)
     margin-bottom: 10px
   &__info
     display: flex
     align-items: center
+    flex-direction: column
     justify-content: space-evenly
     width: 100%
 
@@ -22,7 +23,33 @@
 @media (min-width: 640px)
 
 @media (min-width: 768px)
+  .pokemonPage
+
+    &__h2
+      @include text(500,28px,35px,#fff)
+      margin-bottom: 20px
+    &__h3
+      @include text(500,18px,25px,#fff)
+      margin-bottom: 10px
+    &__info
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-evenly
+      width: 100%
 
 @media (min-width: 1024px)
+  .pokemonPage
+    &__h2
+      @include text(500,48px,45px,#fff)
+      margin-bottom: 20px
+    &__h3
+      @include text(500,38px,35px,#fff)
+      margin-bottom: 10px
+    &__info
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      width: 100%
 
 @media (min-width: 1440px)
