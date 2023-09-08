@@ -1,0 +1,37 @@
+@import "src/styles/mixins"
+.filterPokemon
+  .container
+    padding: 10px 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    row-gap: 10px
+    column-gap: 10px
+  .btn-type
+    @include text(500,18px,25px,#fff)
+    &:hover
+      background: rgba(234, 217, 122, 0.96)
+      box-shadow: 0 8px 32px 0 rgba(233, 255, 0, 0.37)
+      backdrop-filter: blur( 5.5px )
+      -webkit-backdrop-filter: blur( 5.5px )
+    position: relative
+    width: 25%
+    background: rgba( 255, 255, 255, 0.3 )
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+    backdrop-filter: blur( 5.5px )
+    -webkit-backdrop-filter: blur( 5.5px )
+    &__active
+      background: rgba(105, 246, 67, 0.96)
+      box-shadow: 0 8px 32px 0 rgba(233, 255, 0, 0.37)
+      backdrop-filter: blur( 5.5px )
+      -webkit-backdrop-filter: blur( 5.5px )
+
+
+@media (min-width: 640px)
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

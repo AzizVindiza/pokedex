@@ -2,6 +2,7 @@ import './PokemonPage.sass';
 import {useGetPokemonByNameQuery} from "../../store/pokemonApi";
 import {useLocation} from "react-router-dom";
 import React from "react";
+import {CircularProgress} from "@mui/material";
 
 const PokemonPage = () => {
     const location = useLocation()
@@ -14,7 +15,9 @@ const PokemonPage = () => {
                     error ? (
                         <>Oh no, there was an error</>
                     ) : isLoading ? (
-                        <>Loading...</>
+                        <div className={'container-h'}>
+                            <CircularProgress/>
+                        </div>
                     ) : pokemon && <>
                         <h2 className="pokemonPage__h2">{pokemon.name}</h2>
 
